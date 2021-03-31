@@ -10,11 +10,24 @@ app.get('/css/styles.css', function(req, res) {
  res.sendFile(path.join(__dirname + '/dist/css/styles.css'));
 });
 
-app.get('/assets/img/face.jpg', function(req, res) {
- res.sendFile(path.join(__dirname + '/dist/assets/img/face.jpg'));
+app.get('/assets/img/pp1.png', function(req, res) {
+ res.sendFile(path.join(__dirname + '/dist/assets/img/pp1.png'));
 });
-app.get('/assets/img/demo.png', function(req, res) {
- res.sendFile(path.join(__dirname + '/dist/assets/img/demo.png'));
+
+app.get('/assets/img/pp2.png', function(req, res) {
+ res.sendFile(path.join(__dirname + '/dist/assets/img/pp2.png'));
+});
+
+app.get('/assets/img/pp3.png', function(req, res) {
+ res.sendFile(path.join(__dirname + '/dist/assets/img/pp3.png'));
+});
+
+app.get('/assets/img/demo.gif', function(req, res) {
+ res.sendFile(path.join(__dirname + '/dist/assets/img/demo.gif'));
+});
+
+app.get('/assets/img/affinity_map.jpg', function(req, res) {
+ res.sendFile(path.join(__dirname + '/dist/assets/img/affinity_map.jpg'));
 });
 
 app.get('/js/scripts.js', function(req, res) {
