@@ -10410,3 +10410,23 @@ body {
 	display: flex;
     align-items: space-evenly;	
 }
+.project2_hide_bg{
+	background-color:#FDEDEC;
+}
+/* 控制project2展開按鈕圖標的部分 */
+/**箭头图标展开式时的样式*/
+/** collapsed是bootstrap的属性，表示父标签展开的时候加入的图标 after表示在此后加入字体图标  */
+
+[aria-expanded="false"].t1_up{
+	display:none;
+}
+[aria-expanded="false"].t1_down{
+	display:inline;
+}
+
+[aria-expanded="ture"].t1_down{
+	display:none;
+}
+[aria-expanded="ture"].t1_up{
+	display:inline;
+}
