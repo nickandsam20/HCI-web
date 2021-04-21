@@ -10381,3 +10381,32 @@ body {
 .footer {
   padding: 5rem 0;
 }
+.mgbottom1 {
+	margin-bottom:5px;
+}
+
+.mgbottom2{
+	margin-bottom:10px;
+}
+
+.mgbottom3 {
+	margin-bottom:15px;
+}
+
+.mgbottom4 {
+	margin-bottom:20px;
+}
+
+.mgbottom5 {
+	margin-bottom:55px;
+}
+
+.col-vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.col-vertical-even{
+	display: flex;
+    align-items: space-evenly;	
+}
