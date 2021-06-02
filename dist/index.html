@@ -33,6 +33,8 @@
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item js-scroll-trigger" href="#project1"> project 1</a></li>
 								<li><a class="dropdown-item js-scroll-trigger" href="#project2"> project 2</a></li>
+								<li><a class="dropdown-item js-scroll-trigger" href="#project3"> project 3</a></li>
+								<li><a class="dropdown-item js-scroll-trigger" href="#project4"> project 4</a></li>
 								<!-- <li><a class="dropdown-item js-scroll-trigger" href="#project1"> project 2:</a></li> -->
 								<!-- <li><a class="dropdown-item js-scroll-trigger" href="#project1"> project 3:</a></li> -->
 								
@@ -427,11 +429,95 @@
 							<div class="col" id="solution_parent">
 								<div class="row no-gutters">
 									<h3>Concept Video</h3>
+									<!-- <div class="embed-responsive embed-responsive-21by9 project-bg2 "> -->
+									  <!-- <iframe class="embed-responsive-item" src="assets/img/concept.mp4"></iframe> -->
+									<!-- </div> -->
+									
+								</div>
+								<div class="row no-gutters justify-content-center" style="min-height:400px;" >
+									<video class="video-fluid" controls>
+									  <source src="assets/img/concept.mp4"/>
+									</video>
+									<!-- <div class="embed-responsive embed-responsive-21by9 project-bg2 "> -->
+									  <!-- <iframe class="embed-responsive-item" src="assets/img/concept.mp4"></iframe> -->
+									<!-- </div> -->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				
+				 <!-- Project Four Row -->
+                <div class="row justify-content-center no-gutters  p-0 mgbottom3 " id="project4">
+                    <!-- 項目的container-->
+					<div class="container project_container-width bg-white p-0">
+						<div class="row no-gutters project-bg2 justify-content-center">
+							<h1 class="project_text text-right">project 4</h1>
+						</div>
+
+						<div class="row justify-content-center no-gutters" style="min-height:250px;" >
+							<div class="col" id="solution_parent">
+								<div class="row no-gutters">
+									<h3>Task Flow</h3>
+								</div>
+								<div class="row no-gutters border-bottom border-secondary" >
+									<div class="col-12  align-items-start" style="flex-direction: row;">
+										<button type="button"  class="btn btn-info btn-default" onclick="chPic(1)">解鎖(簡單)</button>
+										<button type="button" class="btn btn-info" onclick="chPic(2)">解鎖(困難)</button>
+										<button type="button" class="btn btn-info" onclick="chPic(3)">模式選擇</button>
+										<button type="button" class="btn btn-info" onclick="chPic(4)">設定</button>
+									</div>
+								</div>
+								<div class="row no-gutters justify-content-center border-bottom border-secondary">
+									<img class="img-fluid" id='project4_img'src="assets/img/project4-easy.png"/>
+								</div>
+								<div class="row no-gutters">
+									<h3>Lo-Fi prototype</h3>
+								</div>
+								<div class="row no-gutters justify-content-start border-bottom border-secondary">
+									<video class="embed-responsive-item" controls style="width:300px;height;300px;">
+									  <source src="assets/img/lofi1.mp4"/>
+									</video>
+									<video class="embed-responsive-item" controls style="width:300px;height;300px;">
+									  <source src="assets/img/lofi2.mp4"/>
+									</video>
+								</div>
+								<div class="row no-gutters">
+									<h3>Micro Usability Test</h3>
+								</div>
+								<div class="row no-gutters border-bottom border-secondary" style="min-height:400px;" >
+									<div class="col-5 col-vertical-center align-items-start" style="flex-direction: column;justify-content:space-evenly">
+										<h4>1.使用者一開始就先選擇了啟用，這部分考慮設計成開關那種樣式，關閉時其他選項變為灰色禁止點選。</h4>
+										<h4>2.使用者在設定跟模式選擇卡了一下，原因是內容有所疑問。</h4>
+										<h4>3.對於解鎖介面看見時沒辦法很快地反應出如何操作，可能須多加文字說明</h4>
+									</div>
+									<div class="col-7">
+										<div class="row no-gutters" style="overflow: hidden;">
+											<img class="img-fluid" src="assets/img/project4_mut.png"/>
+										</div>
+									</div>
+								</div>
+								<div class="row no-gutters">
+									<h3>Micro Usability Test使用者回饋</h3>
+								</div>
+								<div class="row no-gutters" style="min-height:400px;" >
+									<div class="col-12 col-vertical-center align-items-start" style="flex-direction: column;justify-content:space-evenly">
+										<h4>1.因為選擇不多、很簡潔所以使用者其實覺得沒有遇到太多困難。</h4>
+										<h4>2."設定"跟"模式選擇"兩個分類標題比較不直覺，甚至是可以將模式選擇的內容合併到設定底下。</h4>
+										<h4>3.因為疫情影響沒辦法在公眾場合拿下口罩進行解鎖。</h4>
+										<h4>4.表情選擇可考慮像指紋辨識一樣，是先收集使用者的資料來做資料庫。</h4>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+					</div>
+				</div>
+				
+				
+				
+				
+				
             </div>
         </section>
 		
@@ -451,5 +537,13 @@
 <script>
 $("[data-toggle='popover']").popover();
 $("[data-toggle='popover']").popover({ trigger: "hover" });
-
+<!-- $(document).ready(function() { -->
+	<!-- document.getElementById('default_btn').click(); -->
+<!-- }); -->
+function chPic(n){
+	if(n==1)document.getElementById('project4_img').src='assets/img/project4-easy.png';
+	else if(n==2)document.getElementById('project4_img').src='assets/img/project4-hard.png';
+	else if(n==3)document.getElementById('project4_img').src='assets/img/project4-mode.png';
+	else if(n==4)document.getElementById('project4_img').src='assets/img/project4-setting.png';
+}
 </script>
